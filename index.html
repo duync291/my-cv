@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Cong Duy - Fullstack Developer CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+            --font-main: 'Inter', sans-serif;
+            --font-size-base: 10.5pt;
+            --line-height: 1.45;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-color);
+            background-color: #f0f2f5;
+            font-size: var(--font-size-base);
+            line-height: var(--line-height);
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .cv-container {
+            width: 210mm;
+            max-width: 100%;
+            background: var(--bg-color);
+            padding: 15mm 15mm;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 22pt;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        header .title {
+            font-size: 13pt;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        header .contact-info {
+            font-size: 10pt;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        section {
+            margin-bottom: 15px;
+        }
+
+        h2.section-title {
+            font-size: 12pt;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            margin-top: 5px;
+            page-break-after: avoid;
+            break-after: avoid;
+        }
+
+        .item {
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 11pt;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 3px;
+            font-size: 10pt;
+        }
+
+        .item-date {
+            font-weight: 600;
+            font-size: 10pt;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+
+        .sub-item {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding-left: 12px;
+            border-left: 2px solid #ddd;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+
+        .sub-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .sub-item-title {
+            font-weight: 700;
+            font-size: 10.5pt;
+            color: var(--primary-color);
+        }
+
+        .sub-item-date {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #555;
+        }
+
+        .sub-item-role {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 3px;
+            font-size: 9.5pt;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 15mm 15mm 15mm 15mm;
+            }
+            body {
+                background-color: #ffffff;
+                margin: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .cv-container {
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+                width: 100%;
+                max-width: none;
+            }
+            /* Tránh ngắt giữa các khối item lớn */
+            .item {
+                page-break-inside: avoid;
+                margin-bottom: 12px;
+            }
+            /* Giữ tiêu đề phần dính liền với nội dung bên dưới */
+            h2.section-title {
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+            /* Headers */
+            header {
+                page-break-after: avoid;
+                page-break-inside: avoid;
+            }
+            /* Danh sách bullet */
+            ul {
+                page-break-inside: auto;
+            }
+            li {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        
+        <header>
+            <h1>Nguyen Cong Duy</h1>
+            <div class="title">Fullstack Developer
+            <div class="contact-info">
+                <span>📍 Ho Chi Minh City</span>
+                <span>📞 <strong>0708225653</strong></span>
+                <span>📧 <a href="mailto:duync291@gmail.com">duync291@gmail.com</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/duynguyen-cong/" target="_blank">LinkedIn Profile</a></span>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2 class="section-title">Professional Summary</h2>
+             <p>Have over 6 years of experience in Fullstack Software Development, specializing in building and maintaining scalable web applications using Angular, Node.js, and Java. Strong experience in analyzing requirements, designing solutions, developing features, and delivering high-quality products throughout the software development lifecycle. Proven ability to work directly with local and international clients to gather business requirements and provide effective technical solutions. Strong problem-solving skills with a deep understanding of business domains. Experienced in Agile/Scrum environments and collaborating with cross-functional teams. A proactive, responsible, and fast-learning professional with excellent communication skills and a passion for continuous learning and technology innovation.</p>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Specialties</h2>
+            <ul>
+                <li>Strong experience in Fullstack Web Application Development using Angular, ReactJS, Node.js, and Java.</li>
+                <li>Strong knowledge of Software Design Patterns, Clean Architecture, and Enterprise Application Development.</li>
+                <li>Experience building scalable systems with Microservices Architecture, GraphQL, REST APIs, and WebSocket.</li>
+                <li>Experienced in Cloud-native applications using AWS services and containerized deployment environments.</li>
+                <li>Strong understanding of database design and development using PostgreSQL, MySQL, MongoDB, SQL Server, and Hasura.</li>
+                <li>Experience working directly with international customers to analyze requirements and deliver business solutions.</li>
+                <li>Strong problem-solving, troubleshooting, debugging, and performance optimization skills.</li>
+                <li>Experience leading technical discussions, mentoring team members, and conducting code reviews.</li>
+                <li>Familiar with Agile/Scrum methodologies and the full Software Development Life Cycle (SDLC).</li>
+                <li>Good English communication skills for working directly with customers and global teams.</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> JavaScript, TypeScript, Java, C#, Python, HTML5, CSS3</li>
+                <li><strong>Frontend:</strong> Angular (6-18+), ReactJS, NextJS, RxJS, NgRx, PrimeNG, Angular Material, Bootstrap, Tailwind CSS</li>
+                <li><strong>Backend:</strong> Node.js, Express.js, NestJS, Java Microservices, GraphQL</li>
+                <li><strong>Database:</strong> PostgreSQL, MySQL, SQL Server, MongoDB, SQLite, Hasura</li>
+                <li><strong>Cloud & DevOps:</strong> AWS (Lambda, Aurora, DynamoDB, ECS Fargate), Docker, Jenkins, Azure DevOps, GitHub Actions</li>
+                <li><strong>Architecture:</strong> Microservices, Clean Architecture, Design Patterns, Multi-Tenant Architecture, Event Driven Architecture</li>
+                <li><strong>Tools:</strong> Git, GitHub, GitLab, Jira, Postman, VS Code, IntelliJ IDEA</li>
+                <li><strong>Testing:</strong> Jest, Jasmine, Karma, Cypress, Playwright, Unit Testing</li>
+                <li><strong>Methodologies:</strong> Agile, Scrum, Kanban</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-title">Industry Experience</h2>
+            <ul>
+                <li>Experience in various domains: Healthcare, Government, Manufacturing, Oil and Gas.</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">FPT Software</div>
+                    <div class="item-date">09/2020 – Present</div>
+                </div>
+                <div class="item-subtitle">Fullstack Developer</div>
+
+                <div class="sub-item">
+                    <div class="sub-item-header">
+                        <div class="sub-item-title">Project: GE Athena</div>
+                        <div class="sub-item-date">02/2026 – Now</div>
+                    </div>
+                    <div class="sub-item-role">Front-end Developer &nbsp;|&nbsp; Project size: 15 members</div>
+                    <ul>
+                        <li>Athena is a next-generation Field Service Management platform developed for GE Vernova to replace the legacy ServiceMax system, providing an AI-enabled operational environment for managing field resources, project execution, work orders, scheduling, dispatching, and operational workflows through a cloud-native microservices architecture.</li>
+                        <li>Design, develop, and maintain enterprise-scale web applications using Angular and Java-based microservices.</li>
+                        <li>Analyze business requirements and translate them into scalable technical solutions.</li>
+                        <li>Develop reusable UI components, dynamic forms, workflow-driven modules, and responsive layouts.</li>
+                        <li>Integrate frontend applications with GraphQL and backend services.</li>
+                        <li>Participate in architectural discussions and provide technical estimations.</li>
+                        <li>Collaborate closely with Product Owners, QA teams, and stakeholders.</li>
+                        <li>Conduct code reviews and mentor team members.</li>
+                        <li>Troubleshoot complex system issues and improve application performance.</li>
+                        <li>Perform unit testing and ensure high code quality standards.</li>
+                        <li><strong>Technologies:</strong> Angular, TypeScript, Java, GraphQL, Node.js, AWS Aurora, DynamoDB, ECS Fargate, WebSocket, Azure DevOps, Git</li>
+                    </ul>
+                </div>
+
+                <div class="sub-item">
+                    <div class="sub-item-header">
+                        <div class="sub-item-title">Project: Agile Asset Management (AAM)</div>
+                        <div class="sub-item-date">04/2024 – 02/2026</div>
+                    </div>
+                    <div class="sub-item-role">Senior Fullstack Developer &nbsp;|&nbsp; Project size: 20+ members</div>
+                    <ul>
+                        <li>A cloud-native Asset Management platform developed for Halliburton Landmark and AkerBP, supporting field development planning, cost management, operational scheduling, activity management, and real-time collaboration across upstream Oil & Gas operations.</li>
+                        <li>Develop and maintain Angular-based enterprise applications and Node.js backend services.</li>
+                        <li>Build Activity Cost Management and Project Planning features.</li>
+                        <li>Develop GraphQL APIs using Hasura.</li>
+                        <li>Implement multi-tenant security architecture with JWT authentication.</li>
+                        <li>Design and maintain PostgreSQL database schemas and migration scripts.</li>
+                        <li>Integrate external systems and OSDU-standard data services.</li>
+                        <li>Implement cost forecasting and Monte Carlo simulation features.</li>
+                        <li>Create technical documentation for architecture and development workflows.</li>
+                        <li>Review code and ensure compliance with security and performance standards.</li>
+                        <li>Optimize application performance and database queries.</li>
+                        <li><strong>Technologies:</strong> Angular 18+, TypeScript, RxJS, NgRx, Node.js, GraphQL, Hasura, PostgreSQL, Flyway, Jenkins, Docker, Git</li>
+                    </ul>
+                </div>
+
+                <div class="sub-item">
+                    <div class="sub-item-header">
+                        <div class="sub-item-title">Project: LeakStop (Envana)</div>
+                        <div class="sub-item-date">08/2021 – 04/2024</div>
+                    </div>
+                    <div class="sub-item-role">Senior Developer &nbsp;|&nbsp; Project size: 15 members</div>
+                    <ul>
+                        <li>A cloud-based environmental monitoring platform that helps customers manage wells, prevent fuel leakage incidents, monitor risks, and leverage predictive analytics through deep-learning models.</li>
+                        <li>Design and develop scalable Angular applications.</li>
+                        <li>Work directly with stakeholders to clarify requirements.</li>
+                        <li>Break down user stories and provide development estimations.</li>
+                        <li>Review code and support developers within the team.</li>
+                        <li>Develop dashboards, reporting systems, and monitoring features.</li>
+                        <li>Integrate AWS Lambda services and backend APIs.</li>
+                        <li>Collaborate with QA teams to ensure product quality.</li>
+                        <li>Prepare user demonstrations and technical documentation.</li>
+                        <li><strong>Technologies:</strong> Angular, TypeScript, PrimeNG, Node.js, AWS Lambda, WebSocket, HTML5, CSS3, Jenkins, Git</li>
+                    </ul>
+                </div>
+
+                <div class="sub-item">
+                    <div class="sub-item-header">
+                        <div class="sub-item-title">Project: Hypercare Training Program</div>
+                        <div class="sub-item-date">02/2021 – 07/2021</div>
+                    </div>
+                    <div class="sub-item-role">Front-end Developer &nbsp;|&nbsp; Project size: 10 members</div>
+                    <ul>
+                        <li>A Digital Workplace (DWP) implementation and support platform focused on customization, deployment, enhancement, and post-production support for enterprise customers.</li>
+                        <li>Develop new features and custom business workflows.</li>
+                        <li>Work closely with senior developers in pair-programming activities.</li>
+                        <li>Customize enterprise applications based on customer requirements.</li>
+                        <li>Participate in Agile Scrum ceremonies.</li>
+                        <li>Troubleshoot production issues and provide technical support.</li>
+                        <li>Create user guides and deployment documentation.</li>
+                        <li><strong>Technologies:</strong> Angular, Node.js, JavaScript, MongoDB, Docker, Azure DevOps, Git</li>
+                    </ul>
+                </div>
+
+                <div class="sub-item">
+                    <div class="sub-item-header">
+                        <div class="sub-item-title">Project: Resource Management System</div>
+                        <div class="sub-item-date">09/2020 – 01/2021</div>
+                    </div>
+                    <div class="sub-item-role">Front-end Developer &nbsp;|&nbsp; Project size: 10 members</div>
+                    <ul>
+                        <li>A Human Resource Management platform that helps organizations manage employees, organizational structures, team allocation, and employee training programs.</li>
+                        <li>Work directly with Product Owners to gather requirements.</li>
+                        <li>Analyze business needs and prepare technical solutions.</li>
+                        <li>Develop HR management and training management features.</li>
+                        <li>Review and improve application code quality.</li>
+                        <li>Deploy applications to Development and Staging environments.</li>
+                        <li>Participate in Agile Scrum processes and customer demonstrations.</li>
+                        <li><strong>Technologies:</strong> Angular, Node.js, JavaScript, MongoDB, Docker, Azure DevOps, Git</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2 class="section-title">Certificates, Honors and Awards</h2>
+            <ul>
+                <li><strong>Azure AI 102 Azure AI Engineer Associate</strong></li>
+            </ul>
+        </section>
+
+        <section class="education">
+            <h2 class="section-title">Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Ho Chi Minh City University of Technology</div>
+                </div>
+                <div class="item-subtitle">Bachelor of Computer Science</div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
